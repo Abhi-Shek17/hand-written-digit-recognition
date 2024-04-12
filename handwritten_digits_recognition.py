@@ -46,7 +46,7 @@ else:
     model = tf.keras.models.load_model('handwritten_digits.model')
 
 # Load custom images and predict them
-image_number = 
+image_number = 1
 while os.path.isfile('digits/digit{}.png'.format(image_number)):
     try:
         img = cv2.imread('digits/digit{}.png'.format(image_number))[:,:,0]
